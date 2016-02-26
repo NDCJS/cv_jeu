@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Audiowide|Orbitron|Bangers|Permanent+Marker|Press+Start+2P' rel='stylesheet' type='text/css'>
+    <title>MON C.V. JEU</title>
+  </head>
+  <body>
+    <div id="ecranDeJeu">
+      <div id="ecrandescore">
+        <ul id="vie">
+          <li>Score :</li>
+          <li id="score">0</li>
+          <li>vie :</li>
+          <li id="pointDeVie">5</li>
+          <li>missiles :</li>
+          <li id="missile">0</li>
+          <li>réparations :</li>
+          <li id="reparation">0%</li>
+        </ul>
+        <ul id="vieBoss">
+          <li>Armure :</li>
+          <li id="armure">100</li>
+          <li>Point de Vie</li>
+          <li id="pv">100</li>
+        </ul>
+        <div id="competence">
+          <img style="left:2000px" class="comp" src="img/logo_html.png" alt="Logo Html 5">
+          <img style="left:2000px" class="comp" src="img/logo_css3.png" alt="Logo Css 3">
+          <img style="left:2000px" class="comp" src="img/logo_js.png" alt="Logo Javascript">
+          <img style="left:2000px" class="comp" src="img/logo_jquery.png" alt="Logo Jquery">
+          <img style="left:2000px" class="comp" src="img/logo_bootstrap.png" alt="Logo Bootstrap">
+          <img style="left:2000px" class="comp" src="img/logo_angular.png" alt="Logo Angular">
+          <img style="left:2000px" class="comp" src="img/logo_mongo.png" alt="Logo MongoDB">
+          <img style="left:2000px" class="comp" src="img/logo_nodejs.png" alt="Logo NodeJS">
+          <img style="left:2000px" class="comp" src="img/logo_ajax.png" alt="Logo Ajax">
+          <img style="left:2000px" class="comp" src="img/logo_meteor.png" alt="Logo Meteor">
+        </div>
+      </div>
+      <div id="background">
+        <img src="img/fondjeu.png" id="imagedefond" alt="Fond du jeu">
+      </div>
+      <div id="personnage" >
+        <img  id="toto" src="img/test2.png" alt="Vaisseau">
+      </div>
+    </div>
+    <div id="laPorte" style="width:100%; height: 100%;overflow:hidden; position:absolute">
+      <img id="hangar" src="img/cc.png" style="position : absolute" alt="Hangar">
+    </div>
+    <div id="porte" style="text-align:center;background-image:url(img/porte.png);height:100%;background-size:contain">
+      <nav>
+        <img id="sprite" src="img/test1.png" style="position:absolute; top:0px;left:1400px;display:inline-block" alt="Animation Vaisseau" />
+        <h1 style="display:inline-block;text-align:center;padding:15px">NicolasDaCosta.fr</h1>
+        <ul>
+          <li id="lancerLeJeu">Lancez le Jeu</li>
+          <li id="quiSuisJe">Qui suis je?</li>
+          <li id="monCv">Mon C.V.</li>
+          <li id="mesReal">Mes réalisations</li>
+        </ul>
+      </nav>
+      <section>
+        <h2>Bienvenue sur NicolasDaCosta.fr
+        Developpeur Web Javascript Full Stack</h2>
+        <h2>Compétant en : Html 5, Css 3, Javascript, Jquery/UI, Angular JS, Mongo DB, Node JS, Express, Meteor, Ajax</h2>
+        <div id="moi">
+          <img class="des" src="img/photo.png" alt="Ma Photo" />
+          <p>Actuellement en formation au sein de l'organisme de formation "IFOCOP" en tant que Developpeur Web Javascript full stack, j'ai réalisé ce site dans le cadre d'un projet de formation.Vous pouvez découvrir toutes les technologies que je connais soit en cliquant sur mon CV soit en testant mon CV jeux.</p>
+        </div>
+        <div id="cv">
+          <object data="cv.pdf" type="application/pdf" style="width:80%;height:550px">
+            <param name="filename" value="fichier.pdf" />
+            <a href="cv.pdf" title="le fichier">Téléchargez le fichier...</a>
+          </object>
+        </div>
+        <div id="real">
+          <div id="chaiNous">
+            <img src="img/logo.png" alt="Logo Chai Nous" style="margin-left:25px">
+            <a href="http://www.chainous.fr" target="_blank"><h3>www.chainous.fr</h3></a>
+            <p>Site vitrine pour un très bon restaurant & bar à vin situé à Crosne, j'ai développé ce site From Scratch, grâce au technologie HTML 5, CSS 3, Javascript, Jquery et Jquery UI.</p>
+          </div>
+          <div id="ceSite">
+            <img src="img/ndc.png" alt="Logo NDC">
+            <h3>www.nicolasdacosta.fr</h3>
+            <p>Site créé pour mettre en application les apprentissage de ma formation, j'ai développé ce site From Scratch, grâce au technologie HTML 5, CSS 3, Javascript, Jquery et Jquery UI.</p>
+          </div>
+        </div>
+        <div id="nom">
+          <form class="" action="index.html" method="post">
+            <label for="identifiant">Bienvenue Commandant veuillez saisir votre identifiant</label>
+            <p>Votre mission consiste a survivre le plus longtemps possible, car vos armes de destructions sont endommagées.</p>
+            <p>Tout les 1000 points 10% de votre armement sera réparé et une competence sera débloquée.</p>
+            <p>A 100% vous pourrez utiliser vos armes.</p>
+            <input type="text" name="identifiant">
+            <input id="start" type="submit" name="name" value="Entrez">
+            <audio src="son/sas.mp3" id="audio"  controls="controls" Hidden preload="auto"></audio>
+            <!-- <audio src="son/tir.mp3" id="tir"  controls="controls" Hidden preload="auto"></audio> -->
+            <audio src="son/decollage.mp3" id="dec"  controls="controls" Hidden preload="auto"></audio>
+            <audio src="son/boss.mp3" id="bos"  controls="controls" Hidden preload="auto"></audio>
+            <audio src="son/jeux.mp3" id="jeux"  controls="controls" Hidden preload="auto"></audio>
+            <audio src="son/explo.mp3" id="explo"  controls="controls" Hidden preload="auto"></audio>
+          </form>
+        </div>
+      </section>
+      <div id="pause" style="border:solid 1px black">
+      <div id="menuPause" style="z-index:1000">
+      <ul>
+        <li id="continuer">Continuer</li>
+        <li id="commandes">Commandes</li>
+        <li id="fin">Voir la fin du jeu</li>
+      </ul>
+      </div>
+      </div>
+    </div>
+  <div id="generique">
+    <h3>Crédits :</h3>
+    <br>
+    <br>
+    <p>Merci d'avoir joué sur ce site</p>
+    <br>
+    <br>
+    <h4>Conception :</h4>
+    <p>Nicolas Da Costa</p>
+    <br>
+    <br>
+    <h4>Réalistation :</h4>
+    <p>Nicolas Da Costa</p>
+    <br>
+    <br>
+    <h4>Développement :</h4>
+    <p>Nicolas Da Costa</p>
+    <br>
+    <br>
+    <h4>Design :</h4>
+    <p>Nicolas Da Costa</p>
+    <br>
+    <br>
+    <h4>Technologies Utilisées :</h4>
+    <p>HTML 5, CSS 3, Javascript, Jquery, Jquery UI</p>
+    <img id="ndc" src="img/ndcgen.png" alt="Logo" />
+    <a href="https://www.facebook.com/d.c.nicolas" target="_blank"><img id="fb" src="img/fb.png" alt="Logo Facebook"></a>
+    <a href="https://www.linkedin.com/profile/view?id=AAIAABtwcXsBRgtUcFLNrnhShkcJytvF4IFQsCo&trk=nav_responsive_tab_profile_pic" target="_blank"><img id="lk" src="img/lk.png" alt="Logo Linkedin"></a>
+    <p id="site">
+      Revenir sur le site
+    </p>
+    <br>
+    <br>
+  </div>
+  <div id="mort">
+    <h1>GAME</h1>
+    <h1>OVER</h1>
+    <h3>relancer le jeu</h3>
+  </div>
+  <div id="touche">
+    <p>
+      Esc
+    </p>
+  </div>
+  <div id="son">
+    <p id="sonp">
+      ||
+    </p>
+  </div>
+  <div id="ecranDesTouches">
+    <div class="p"><p>Monter :</p></div>
+    <div class="p"><p>Descendre :</p></div>
+    <div class="p"><p>Reculer :</p></div>
+    <div class="p"><p>Avancer :</p></div>
+    <div class="p"><p>Attaque 1 :</p></div>
+    <div class="p"><p>Attaque 2 :</p></div>
+    <div class="p"><p>Pause :</p></div>
+    <div class="q"><p>Arrow Up</p></div>
+    <div class="q"><p>Arrow Down</p></div>
+    <div class="q"><p>Arrow Left</p></div>
+    <div class="q"><p>Arrow Right</p></div>
+    <div class="q"><p>Ctrl</p></div>
+    <div class="q"><p>Space</p></div>
+    <div class="q"><p>Echap</p></div>
+  </div>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.4/jquery-ui.min.js"></script>
+  <script src="jeu.js"></script>
+  </body>
+</html>

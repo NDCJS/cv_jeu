@@ -1,0 +1,414 @@
+/*------------------------------------------------------------------------------BALISE HTML------------------------------------------------------------------------------*/
+
+body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width:auto;
+  height: auto;
+  background-image: url(img/porte.jpg);
+  cursor: default;
+  font-family: 'Press Start 2P', cursive;
+}
+
+h1{
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  cursor: url("img/cursor.png"),pointer;
+}
+
+h2{
+  font-size: 2em;
+  background-image:url(img/opo.png);
+  color: white;
+  display: inline-block;
+  width: 90%;
+  border: grey 5px solid;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: red;
+}
+
+form{
+  text-align: center;
+  display: block;
+}
+
+audio input{
+  display:inline-block;
+  text-align: center;
+  width: 50%
+}
+
+label{
+  display: block;
+  font-size: 1.5em;
+  border: 5px;
+  border-style: groove;
+}
+
+nav{
+  background-image: url(img/fondnav.png);
+  background-size: cover;
+  padding: 10px;
+}
+
+ul{
+  text-align: center;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+}
+
+li{
+  display: inline-block;
+  font-family: 'Press Start 2P', cursive;
+  border: 3px;
+  border-color: white;
+  text-align: center;
+  list-style: none;
+  border-style: solid;
+  padding: 3px;
+  margin: 5px;
+  cursor:url("img/cursor.png"),pointer;
+}
+
+section{
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------------------------------------------ID--------------------------------------------------------------------------------------------------*/
+
+#generique{
+  display: none;
+  width:100%;
+  height:4000px;
+  background-image: url(img/opo.png);
+  background-size: cover;
+  color: white;
+  position:absolute;
+  text-align: center;
+  top: 1500px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2em;
+}
+
+#ndc{
+  display: none;
+  position: absolute;
+  top: 2100px;
+  left: 35%;
+}
+#lk{
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+#fb{
+  display: none;
+  position: absolute;
+  bottom:0px;
+  left: 60px;
+}
+#site{
+  position: absolute;
+  top: 2700px;
+  left: 50%;
+}
+#pause{
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width:100%;
+height: 100%;
+opacity: 0.9;
+background-color: black;
+}
+#recommencer{
+  opacity:0.4;
+  cursor: none;
+}
+#menuPause{
+position: relative;
+top: 40%;
+}
+
+#menuPause>ul>li{
+  display: inline-block;
+  font-size: 2.5em;
+  width:50%;
+  left: 25%;
+  top: 50%
+
+}
+#mort{
+  background-image: url(img/opo.png);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  color: white;
+  display: none;
+}
+#mort>h1{
+  display:block;
+  font-size: 8em;
+  cursor: none;
+}
+#ecranDeJeu{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+    display: none;
+}
+
+#ecranDesTouches{
+  background-color:black;
+  width:50%;
+  height:500px;
+  position:absolute;
+  left:25%;
+  top:200px;
+  display:none;
+  cursor:url("img/cursor.png"),pointer;
+}
+
+#touche{
+  position:absolute;
+  width:50px;
+  height:50px;
+  background-color:black;
+  top:10px;
+  right:10px;
+  border:solid white 2px;
+  font-size:0.7em;
+  border-radius:25px;
+  cursor:url("img/cursor.png"),pointer;
+}
+
+#touche>p{
+  color:white;
+  text-align:center;
+  margin-top:18px;
+}
+
+#son{
+  position:absolute;
+  width:50px;
+  height:50px;
+  background-color:black;
+  top:10px;
+  right:70px;
+  border:solid white 2px;
+  font-size:0.7em;
+  border-radius:25px;
+  cursor:url("img/cursor.png"),pointer;
+}
+
+#son>p{
+  color:white;
+  text-align:center;
+  margin-top:18px;
+}
+
+.p{
+  /*background-color:red;*/
+  width:180px;
+  height:50px;
+  position:relative;
+  left:20px;
+  top:15px;
+}
+
+.q{
+  /*background-color:red;*/
+  width:250px;
+  height:50px;
+  position:relative;
+  left:230px;
+  top:-447px;
+}
+
+#ecranDesTouches>div>p{
+  padding-top:15px;
+  text-align:left;
+  color:white;
+}
+
+#vie{
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  z-index: 1;
+  background-color: green;
+  display: block;
+}
+
+#competence{
+  bottom:0px;
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  /*border : 2px solid blue;*/
+  width:100%;
+  height: 60px;
+  position: fixed;
+}
+
+#html,#css,#java,#jq,#boot,#angu,#ajax,#mongo,#node,#exp,#mete{
+  padding: 1px;
+  margin: 1px;
+}
+
+#background{
+  z-index: -50;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#personnage{
+  position: absolute;
+  overflow: hidden;
+  display: none;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+#Menu{
+  position: absolute;
+  z-index: 5000;
+  background-color: grey;
+  border-radius: 10px;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+#generique>h3{
+  color: red;
+}
+
+#generique>h4{
+  color:yellow;
+}
+
+#porte{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background-size: contain;
+  background-color: grey;
+}
+
+#real a{
+  text-decoration: none;
+  color: white;
+}
+
+.comp{
+  position: absolute;
+  bottom: 0px;
+  left: 2000px;
+  margin-bottom: 5px;
+  display: none;
+}
+
+#vieBoss{
+  display: none;
+  z-index: 55;
+  position: fixed;
+  left: 0;
+  top: 50px;
+  background-color: red;
+  margin: 0;
+}
+
+#laPorte{
+  display: none;
+}
+
+#nom {
+  display: none;
+  position: absolute;
+  top:45%;
+  left: 25%;
+  width:50%;
+  height: auto;
+  background-image: url(img/opo.png);
+  color: white;
+  padding: 5px;
+  border: 2px solid grey;
+}
+
+#moi{
+  display: none;
+  position: absolute;
+  top:45%;
+  left:25%;
+  width:50%;
+  height: auto;
+  background-image: url(img/opo.png);
+  color: white;
+  padding: 5px;
+  border: 2px solid grey;
+}
+
+#cv{
+  display: none;
+}
+
+.des{
+  float: left;
+  display: inline-block;
+  margin: 5px;
+}
+
+#real{
+  display: none;
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  width:50%;
+  font-size: 0.7em;
+}
+
+#chaiNous{
+width : 45%;
+height: 350px;
+display : inline-block;
+background-color: #2B3A41;
+border-style: groove;
+cursor:url("img/cursor.png"),pointer;
+overflow: hidden;
+}
+
+#ceSite{
+  width : 45%;
+  height: 350px;
+  display : inline-block;
+  color: white;
+  background-image: url(img/fondnav.png);
+  background-size: cover;
+  border-style: groove;
+  overflow: hidden;
+}
